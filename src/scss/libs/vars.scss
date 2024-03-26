@@ -1,0 +1,22 @@
+
+$fontFamilyBase: 'Rajdhani';
+$fontWeightBase: 600;
+$fontSizeBase: 19.9px;
+$BaseColor:#3D3D3F;
+$GrayColor:#595959;
+$WhiteColor:#FFFFFF;
+// Минимальная ширина страницы
+$minWidth: 375;
+// Ширина полотна (макета)
+$maxWidth: 1600px;
+// Ширина ограничивающего контейнера (0 = нет ограничения)
+$maxWidthContainer: 1394px;
+// Общий отступ у контейнера
+// (206= по 103px слева и справа, 0 = нет отступа)
+$containerPadding: 206;
+
+$width1440:1440px;
+$width1200: 1200px;
+$width1024: 1024px;
+$width767:767px;
+$width576: 576px;

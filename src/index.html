@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+    "title":"OceanNFT"
+})
+<body>
+    <div class="wrapper">
+        @@include('html/header.html',{})
+        
+        <main>
+            @@include('html/hero.html',{})
+            @@include('html/nft.html',{})
+            @@include('html/buttonn.html',{})
+            @@include('html/people.html',{})
+            @@include('html/seller.html',{})
+            @@include('html/what.html',{})
+            @@include('html/sub.html',{})
+        </main>
+            
+        
+        @@include('html/footer.html', {})   
+        
+    </div>
+    
+    
+    <script src="js/app.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script> // burger
+        const burger = document.querySelector('.burger');
+        const content = document.querySelector('.header__content');
+        const navLink = document.querySelectorAll('.nav-link');
+
+
+        function openMenu(){
+            const activeBurger =  burger.classList.toggle('active');
+            const activeContent = content.classList.toggle('active');
+            if(activeBurger){
+                document.body.style.overflow = 'hidden';
+            }if(!activeBurger){
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        burger.addEventListener('click', openMenu)
+
+        function closeMenu(){
+            burger.classList.remove('active');
+            content.classList.remove('active');
+            document.body.style.overflow = 'scroll';
+        }
+
+        navLink.forEach(n => n.addEventListener('click', closeMenu));
+
+    </script>
+
+    <script>// slider
+        const slider = document.querySelector('.swiper-container');
+        const slider1 = document.querySelector('.swiper-container1');
+
+        let mySwiper = new Swiper(slider, {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay:{
+                delay:2000,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+
+        let mySwiper1 = new Swiper(slider1, {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay:{
+                delay:2000,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+
+    </script>
+
+    <script>/*tabs*/
+        
+
+        document.querySelectorAll('.tabs-header__item').forEach((item) =>
+        item.addEventListener('click', function (e) {
+            e.preventDefault();
+            const id = e.target.getAttribute('href').replace('#', '');
+
+            document.querySelectorAll('.tabs-header__item').forEach(
+                (child) => child.classList.remove('tabs-header__item_active')
+            );
+
+            document.querySelectorAll('.tabs-body__block').forEach(
+                (child) => child.classList.remove('tabs-body__block_active')
+            );
+
+            item.classList.add('tabs-header__item_active');
+            document.getElementById(id).classList.add('tabs-body__block_active'); 
+        })
+        );
+
+        document.querySelector('.tabs-header__item').click();
+    </script>
+
+    <script>//sellers
+        
+
+        function addClickHeight() {
+            let addHeight = document.querySelector('.sellers-body__overflow-hidden');
+            addHeight.classList.toggle('sellers-body_active');
+        };
+    </script>
+
+    <script> // footer
+       document.querySelectorAll('.footer-menu__titel-section').forEach((item) => {
+            item.addEventListener('click', (event) => {
+                event.preventDefault();
+                const parent = item.parentNode;
+                const arrow = item.querySelectorAll('.footer-menu__arrow-menu');
+
+                if (parent.classList.contains('footer-menu__colum_active')){
+                    parent.classList.remove('footer-menu__colum_active');
+                    arrow.forEach((arrowItem) => {
+                        arrowItem.classList.remove('footer-menu__arrow-menu_active');
+                    });
+                } else {
+                    document
+                        .querySelectorAll('.footer-menu__colum')
+                        .forEach((child) => {
+                            child.classList.remove('footer-menu__colum_active');
+                        });
+                            
+                    document
+                        .querySelectorAll('.footer-menu__arrow-menu')
+                        .forEach((arrowItem) => {
+                            arrowItem.classList.remove('footer-menu__arrow-menu_active');
+                        });
+            
+                    parent.classList.add('footer-menu__colum_active');
+                    arrow.forEach((arrowItem) => {
+                        arrowItem.classList.add('footer-menu__arrow-menu_active');
+                    });
+                } 
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+

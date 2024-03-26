@@ -1,0 +1,454 @@
+
+.sellers{
+    margin-top: 156px;
+
+    &__text{
+
+        &-title{
+            font-family: 'Orbitron';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 33px;
+            
+
+            margin: 0 0 0 30px ;
+            color: #FFFFFF;
+            text-align: center;
+            padding-right: 0px;
+            
+            span{
+                color: #FF56F6;
+                cursor: pointer;
+                margin-left: 5px;
+            }
+
+            .img-span{
+                margin-left: 10px;
+                margin-top: 15px;
+                cursor: pointer;
+            }
+
+            .img-span.active{
+                transform: rotate(0.5turn);
+            }
+        }
+
+        &-text{
+            display: flex;
+            align-items: center;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 25px;
+            text-align: center;
+            max-width: 500px;
+            color: #FFFFFF;
+            margin: 0 auto ;
+            margin-top: 22px;
+            display: none;
+           
+        }
+
+        &-text.active{
+            display: block;
+            
+        }
+    }
+
+
+    
+    .sellers-body{
+
+        &__overflow-hidden{
+            overflow: hidden;
+            height: 665px;
+            transition: height 0.8s ease-in-out;
+
+            
+        }
+
+        &__content{
+            display: grid;
+            margin: 55px 0 0 5px;
+            grid-template-columns: repeat(auto-fill, minmax( 390px, 1fr));
+            column-gap: 35px;
+            row-gap: 32px;
+
+            
+        }
+
+        &__item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 26px 20px 24px 30px ;
+            border-radius: 29px;
+            border: 3px solid rgba(255, 255, 255, 0.28);;
+            backdrop-filter: blur(38px);
+            -webkit-backdrop-filter: blur(38px);
+
+        }
+
+        &__item-wrapper{
+            display: flex;
+            align-items: center;
+        }
+        
+        &__number{
+            font-family: 'Roboto';
+            font-size: 19px;
+            font-weight: 500;
+            color: #FFFFFF;
+
+        }
+        img{
+            margin-left: 14px;
+
+        }
+        &__info{
+            margin-left: 14px;
+
+            
+
+            
+            
+        }
+        &__title-name{
+            margin: 3px 0 7px 0;
+            font-size: 19px;
+            font-weight: 500;
+            font-family: 'Roboto';
+            color: #FFFFFF;
+            padding-bottom: 13px;
+        }
+        &__crypto{
+            display: flex;
+            align-items: center;
+            margin-left: -15px;
+            
+            
+        }
+        &__score-cryptocurrency {
+            margin-left: 4px;
+            color: rgba(255, 255, 255, 0.80);
+            font-family: 'Roboto';
+            font-size: 14px;
+        }
+        &__score{
+            font-size: 15px;
+            font-weight: 500;
+            font-family: 'Roboto';
+            margin: 15px 0 0 0px;
+            padding: 5px 18px 6px 18px;
+            border-radius: 18px;
+        }
+
+        .green {
+            color: #0F6;
+            border: 1px solid  rgba(0, 178, 71, 0.72);
+            background: rgba(0, 178, 71, 0.15);
+        }
+        .red {
+            color:  #F00;
+            border: 1px solid rgba(178, 0, 0, 0.72);
+            background: linear-gradient(180deg, rgba(235, 20, 20, 0.15) 0%, rgba(235, 20, 20, 0.10) 100%);
+        }
+    }
+
+
+
+    &__btn{
+        max-width: 250px;
+        margin: 55px auto;
+        text-align: center;
+
+        .sellers__btn-desktop{
+            cursor: pointer;
+            border: 0;
+            padding: 2px;
+            background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
+            
+
+            span{
+                display: block;
+                padding: 11px 75px;
+                 background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+                 font-family: 'Rajdhani';
+                 font-style: normal;
+                 font-weight: 600;
+                 font-size: 19.8983px;
+                 line-height: 25px;
+                 text-align: center;
+                 
+                 color: #FFFFFF;
+            }
+        }
+        .sellers__btn-mobile{
+            cursor: pointer;
+            display: none;
+            border: 0;
+            background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
+            padding: 2px;
+            -webkit-clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+            clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+            white-space: nowrap;
+
+            span{
+                display: block;
+                padding: 20px 100px 20px 40px;
+                color: white;
+                background: rgb(32, 8, 59);
+                -webkit-clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+                clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+                transition: 0.5s;
+                font-family: "Orbitron";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 19.8983px;
+                line-height: 25px;
+                color: #FFFFFF;
+                position: relative;
+            }
+
+            span:after{
+                content: "→";
+                position: absolute;
+                font-size: 40px;
+                top: 17px;
+                right: 40px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1440px){
+
+    .sellers{
+        padding: 0 20px;
+        
+        .sellers-body {
+            &__overflow-hidden{
+                height: 675px;
+            }
+
+            &_active {
+                height: 977px;
+            }
+
+            &__content {
+                grid-template-columns: repeat(2, minmax( 360px, 1fr));
+            }
+
+            &__item {
+                padding: 26px 20px 24px 30px;
+                border-radius: 29px;
+            }
+        }
+    }
+
+}
+@media(max-width: 1240px){
+    .sellers{
+        padding: 0 20px;
+        
+        .sellers-body {
+
+            &__overflow-hidden{
+                height: 530px;       
+            }
+
+            &_active {
+                height: 740px;
+            }
+    
+            &__content {
+                margin: 37px 0 0 0;
+                grid-template-columns: repeat(2, minmax( 316px, 1fr));
+                column-gap: 10px;
+                row-gap: 25px;
+            }
+    
+            &__item {
+                padding: 20px 14px 19px 21px;
+                border-radius: 21px;
+            }
+    
+            &__number {
+                font-size: 14px;
+            }
+    
+            &__img {
+                margin-left: 12px;
+                width: 51px;
+            }
+    
+            &__info {
+                margin-left: 10px;
+            }
+    
+            &__title-name {
+                margin: 1px 0 12px 0;
+                font-size: 14px;
+            }
+            
+            &__score-cryptocurrency {
+                margin-left: 3px;
+                font-family: 'Roboto';
+                font-size: 10px;
+            }
+            &__score {
+                font-size: 11px;
+                margin: 15px 0 0 0px;
+                padding: 4px 13px 4px 12px;
+                border-radius: 18px;
+            }
+        }
+    }
+}
+
+@media(max-width: 920px){
+    .sellers{
+        padding: 0 20px;
+        .sellers__btn {
+
+            .sellers__btn-desktop{
+                display: none;
+    
+            }
+
+            .sellers__btn-mobile{
+                display: block;
+                margin: -40px auto 0 ;
+                span{
+                    display: block;
+                    padding: 10px 50px 10px 30px;
+                    color: white;
+                    
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 15px;
+                    
+                }
+                span:after{
+                    
+                    font-size: 40px;
+                    top: 3px;
+                    right: 10px;
+                }
+            }
+        }
+        
+
+
+    }
+    
+}
+
+@media(max-width: 767px){
+    .sellers{
+        margin-top: 150px;
+        padding: 0 20px;
+
+        .sellers-body {
+            &__overflow-hidden{
+                height: 480px;             
+            }
+
+            &_active {
+                height: 1380px;
+            }
+    
+            &__content {
+                margin: 27px 0 0 5px;
+                grid-template-columns: repeat(1, minmax( 317px, 1fr));
+                row-gap: 24px;
+            }
+    
+            &__item {
+                padding: 16px 14px 15px 21px;
+                border-radius: 18px;
+                border: 2px solid rgba(255, 255, 255, 0.28);
+                
+            }
+    
+            &__number {
+                font-size: 14px;
+            }
+    
+            &__info {
+                margin-left: 10px;
+            }
+    
+            &__title-name {
+                margin: 1px 0 12px 0;
+                font-size: 14px;
+            }
+            
+            &__score-cryptocurrency {
+                margin-left: 3px;
+                font-size: 10px;
+            }
+            &__score {
+                font-size: 11px;
+                margin: 10px 0 0 0px;
+                padding: 4px 14px 5px 14px;
+                border-radius: 18px;
+            }
+        }
+    }
+}
+
+@media(max-width: 500px){
+    
+    .sellers{
+
+        &__text{
+            &-title{
+                font-weight: 700;
+                font-size: 19px;
+                line-height: 24px;
+                margin:  0 0 0 15px;
+            }
+
+            &-text{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                margin: 21px 0 0 0px;
+            }
+        }
+
+
+        
+    }
+    
+    
+}
+
+@media(max-width: 500px){
+    .sellers{
+
+        .sellers-body{
+
+            &__content {
+               row-gap: 28px;
+            }
+
+            &__title-name {
+                margin: 5px 0 8px 0;
+                padding: 0 ;
+            }
+        }
+        .sellers__btn {
+
+            .sellers__btn-mobile{
+                display: block;
+                margin: -45px auto 0 ;
+                
+            }
+        }
+    }
+}

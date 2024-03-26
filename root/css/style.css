@@ -1,0 +1,3287 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Aldrich;
+  font-display: swap;
+  src: url("../fonts/Aldrich-Regular.woff2") format("woff2"), url("../fonts/Aldrich-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: FontsFree;
+  font-display: swap;
+  src: url("../fonts/FontsFree-Net-SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/FontsFree-Net-SFProDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Inter;
+  font-display: swap;
+  src: url("../fonts/Inter-ExtraBold.woff2") format("woff2"), url("../fonts/Inter-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Inter;
+  font-display: swap;
+  src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  font-display: swap;
+  src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  font-display: swap;
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: MuseoModerno;
+  font-display: swap;
+  src: url("../fonts/MuseoModerno-Regular.woff2") format("woff2"), url("../fonts/MuseoModerno-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Orbitron;
+  font-display: swap;
+  src: url("../fonts/Orbitron-Bold.woff2") format("woff2"), url("../fonts/Orbitron-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Rajdhani;
+  font-display: swap;
+  src: url("../fonts/Rajdhani-Bold.woff2") format("woff2"), url("../fonts/Rajdhani-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Rajdhani;
+  font-display: swap;
+  src: url("../fonts/Rajdhani-Medium.woff2") format("woff2"), url("../fonts/Rajdhani-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Rajdhani;
+  font-display: swap;
+  src: url("../fonts/Rajdhani-Regular.woff2") format("woff2"), url("../fonts/Rajdhani-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Rajdhani;
+  font-display: swap;
+  src: url("../fonts/Rajdhani-SemiBold.woff2") format("woff2"), url("../fonts/Rajdhani-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Spartan;
+  font-display: swap;
+  src: url("../fonts/Spartan-SemiBold.woff2") format("woff2"), url("../fonts/Spartan-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Metropolis;
+  font-display: swap;
+  src: url("../fonts/fontsMetropolis-Bold.woff2") format("woff2"), url("../fonts/fontsMetropolis-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: fontsMetropolis;
+  font-display: swap;
+  src: url("../fonts/fontsMetropolis-Medium.woff2") format("woff2"), url("../fonts/fontsMetropolis-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: fonts\a lethianext;
+  font-display: swap;
+  src: url("../fonts/fonts\alethianext-light.woff2") format("woff2"), url("../fonts/fonts\alethianext-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background: #F9FAFF;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button, a {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: "Rajdhani";
+  font-weight: 600;
+  font-size: 19.9px;
+  color: #3D3D3F;
+  background: rgb(32, 8, 59);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1394px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  transition: 0.5s;
+  height: 100px;
+  top: 0;
+}
+
+.header-fixed {
+  background: rgb(32, 8, 59);
+  opacity: 0.7;
+}
+
+.header-fixed:hover {
+  opacity: 1;
+}
+
+.header {
+  display: flex;
+  padding-top: 50px;
+  padding-left: 9px;
+  transition: 0.5s;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__logo p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.header__logo p span {
+  color: #FFFFFF;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 100%;
+  align-items: center;
+  margin-left: 233px;
+}
+.header__content nav .nav {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.header__content nav .nav li:nth-child(2) {
+  margin: 0 72px;
+}
+.header__content nav .nav li a {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.3s;
+}
+.header__content nav .nav li a:hover {
+  color: rgb(255, 255, 255);
+}
+.header__content-link {
+  display: flex;
+  align-items: center;
+  padding-right: 8px;
+}
+.header__content-link a:nth-child(1) {
+  margin: 0 40px;
+}
+.header__content-link a img {
+  transition: 0.3s;
+}
+.header__content-link a img:nth-child(2) {
+  vertical-align: middle;
+}
+.header .burger {
+  display: none;
+  cursor: pointer;
+}
+.header .burger .humb {
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #FFFFFF;
+  margin: 6px 0px;
+  transition: 0.3s;
+}
+.header .burger.active .humb:nth-child(2) {
+  opacity: 0;
+}
+.header .burger.active .humb:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.header .burger.active .humb:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 800px) {
+  .header__content {
+    position: absolute;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    top: 75px;
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    margin: 0;
+    transition: 0.3s;
+  }
+  .header__content nav .nav {
+    flex-direction: column;
+  }
+  .header {
+    flex-basis: 100%;
+    justify-content: space-between;
+  }
+  .header .burger {
+    display: block;
+  }
+  .header__content.active {
+    left: 0;
+    background-position: top center;
+    background-size: cover;
+    transition: 0.3s;
+    z-index: 60;
+    background: rgb(32, 8, 59);
+  }
+  .header__content nav .nav li a {
+    margin: 20px 0px;
+  }
+  .header__content-link {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .header__content-link a {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+  .header .burger {
+    padding-right: 29px;
+  }
+}
+@media (max-width: 425px) {
+  .header-header {
+    height: 61px;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    height: 61px;
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+  .header__logo img {
+    width: 13.5px;
+    height: 22px;
+  }
+  .header__logo p {
+    font-family: "Orbitron";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .header__logo p span {
+    color: #FFFFFF;
+  }
+  .header .burger {
+    padding-right: 29px;
+  }
+  .header .burger .humb {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 6px 0px;
+    transition: 0.3s;
+  }
+}
+.hero {
+  transition: 0.5s;
+  margin-top: 96px;
+  z-index: 2;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 600px 100px 10px;
+  min-width: 200px;
+  margin-bottom: 223px;
+}
+.content__left {
+  grid-column: 1/2;
+  max-width: 847px;
+}
+.content__left-title {
+  font-family: "Spartan";
+  font-size: 66px;
+  font-weight: 600;
+  line-height: 91px;
+  color: #FFFFFF;
+  margin-top: 0px;
+}
+.content__left-title .span-title {
+  background: linear-gradient(272.38deg, #43A5E3 46.06%, #FF56F6 81.53%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.content__left-text {
+  font-family: "Rajdhani";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 44px;
+  max-width: 660px;
+  color: #FFFFFF;
+  margin-top: 15px;
+}
+.content__left-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+  max-width: 435px;
+  align-items: center;
+  margin-left: -1px;
+}
+.content__left-btn .hexagon-btn {
+  background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
+  padding: 2px;
+  clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+  white-space: nowrap;
+  cursor: pointer;
+  border: 0;
+  transition: 0.5s;
+}
+.content__left-btn .hexagon-btn span {
+  display: block;
+  padding: 15px 95px 20px 65px;
+  color: white;
+  background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+  clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+  transition: 0.5s;
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19.8983px;
+  line-height: 25px;
+  color: #FFFFFF;
+  position: relative;
+}
+.content__left-btn .hexagon-btn span:after {
+  content: "→";
+  position: absolute;
+  font-size: 80px;
+  top: 2px;
+  right: 11px;
+}
+.content__left-btn .hexagon-btn span:hover {
+  background: linear-gradient(180deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+}
+.content__left-btn .hexagon_btn:hover {
+  background: linear-gradient(130deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
+}
+.content__left-btn a {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 25px;
+  background: linear-gradient(89.89deg, #42A6E3 2.33%, #FF56F6 101.4%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.content__left-info {
+  display: flex;
+  max-width: 480px;
+  margin-top: 65px;
+  justify-content: space-between;
+}
+.content__left-info .info-midl {
+  border-left: 1.10546px solid rgba(255, 255, 255, 0.26);
+  border-right: 1.10546px solid rgba(255, 255, 255, 0.26);
+  padding: 0 20px 0 40px;
+  margin: 0 28px 0 0;
+}
+.content__left-info .info-one p {
+  font-family: "Aldrich";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 53px;
+  color: #FFFFFF;
+}
+.content__left-info .info-one span {
+  font-family: "Aldrich";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.221092px;
+  color: #FFFFFF;
+}
+.content .content__right {
+  grid-column: 2/3;
+  position: relative;
+  margin-left: -112px;
+  margin-top: 13px;
+}
+.content .content__right-bgc {
+  max-width: 400px;
+  width: 85%;
+  display: block;
+  margin: 0 auto;
+}
+.content .content__right .card {
+  width: 336px;
+  height: 181px;
+  position: absolute;
+  bottom: 45px;
+  right: 0px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+  padding: 2px;
+  clip-path: polygon(12% 0%, 100% 0, 100% 100%, 0 100%, 0 15%);
+  border-radius: 1px;
+}
+.content .content__right .card .card__content {
+  display: flex;
+  justify-content: space-between;
+  clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+  clip-path: polygon(12% 0%, 100% 0, 100% 100%, 0 100%, 0 15%);
+  backdrop-filter: blur(30.4001px);
+}
+.content .content__right .card .card__content-left {
+  margin-right: 35px;
+}
+.content .content__right .card .card__content-left-title {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 35px;
+  color: #FFFFFF;
+  padding: 25px 0 0 22px;
+}
+.content .content__right .card .card__content-left-user {
+  display: flex;
+  align-items: center;
+  margin-top: 1px;
+  padding: 0 0 0 20px;
+}
+.content .content__right .card .card__content-left-user a {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 35px;
+  color: #FFFFFF;
+  margin: 0 5px;
+}
+.content .content__right .card .card__content-left-text {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 35px;
+  color: #FFFFFF;
+  padding: 8px 0 0 22px;
+  opacity: 0.7;
+}
+.content .content__right .card .card__content-left-crypto {
+  display: flex;
+  align-items: center;
+  margin-top: -14px;
+  padding: 0px 0 0px 17px;
+}
+.content .content__right .card .card__content-left-crypto p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 12px;
+  color: #FFFFFF;
+  margin: 0 3px;
+}
+.content .content__right .card .card__content-left-crypto span {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 35px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.content .content__right .card .card__content-right-title {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-size: 11.05px;
+  font-weight: 600;
+  line-height: 35px;
+  color: #FFFFFF;
+  padding: 25px 60px 0 0;
+}
+.content .content__right .card .card__content-right-time {
+  display: flex;
+  justify-content: space-between;
+  margin: -10px 24px 0 0;
+}
+.content .content__right .card .card__content-right-time .time {
+  max-height: 40px;
+}
+.content .content__right .card .card__content-right-time .time p {
+  font-family: "Rajdhani";
+  font-weight: 600;
+  font-size: 17px;
+  font-style: normal;
+  line-height: 35px;
+  color: #FFFFFF;
+  align-items: center;
+  margin-bottom: -19px;
+}
+.content .content__right .card .card__content-right-time .time span {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 35px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  margin: 0px;
+}
+.content .content__right .card .card__content-right-time-midl {
+  margin: 0 20px;
+}
+.content .content__right .card .card__content-right .time-btn {
+  margin-top: 30px;
+  margin-left: -10px;
+  cursor: pointer;
+  border: 0;
+  padding: 2px;
+  background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
+}
+.content .content__right .card .card__content-right .time-btn span {
+  display: block;
+  padding: 7px 43px 7px 10px;
+  background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  /* identical to box height */
+  position: relative;
+  color: #FFFFFF;
+}
+.content .content__right .card .card__content-right .time-btn span:after {
+  content: "→";
+  position: absolute;
+  font-size: 20px;
+  top: 7px;
+  right: 10px;
+}
+.content__bottom {
+  grid-column: 1/3;
+  padding-top: 40px;
+}
+.content__bottom-link {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+  padding: 20px 0;
+}
+
+@media (max-width: 1440px) {
+  .hero {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .hero {
+    margin-top: 20px;
+  }
+  .hero .content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 700px 200px 1fr;
+    max-width: 100%;
+  }
+  .hero .content__left {
+    grid-row: 1/2;
+    margin: auto;
+  }
+  .hero .content__right {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .hero .content__right .card {
+    right: 30%;
+    left: 30%;
+    bottom: -60px;
+  }
+  .hero .content__right .card-bgc {
+    max-width: 400px;
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+  }
+  .hero .content__bottom {
+    grid-row: 2/3;
+    padding: 0 30px;
+  }
+  .hero .content .content__right .card {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1080px) {
+  .hero .content_bottom {
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 0px;
+  }
+  .hero .content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 200px 1fr;
+    max-width: 100%;
+    padding: 0 0px;
+  }
+  .hero .content__left {
+    padding: 0 13px;
+    height: 400px;
+    margin-top: 45px;
+  }
+  .hero .content__left-title {
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 57px;
+    width: 290px;
+    color: #FFFFFF;
+    padding-top: 0px;
+  }
+  .hero .content__left-text {
+    padding-top: 14px;
+    padding-bottom: 33px;
+  }
+  .hero .content__left-btn {
+    margin-top: 0px;
+  }
+  .hero .content__left-btn .hexagon-btn span {
+    padding: 7px 50px 10px 30px;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+  }
+  .hero .content__left-btn .hexagon-btn span::after {
+    top: -1px;
+    font-size: 45px;
+    right: 5px;
+  }
+  .hero .content__left-btn a {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    margin: 0px 82px 0 0;
+  }
+  .hero .content__left-info {
+    width: 100%;
+    margin-top: 42px;
+  }
+  .hero .content__left-info .info-midl {
+    border: 0;
+    margin: 0;
+    padding: 0 10px;
+  }
+  .hero .content__left-info .info-right {
+    padding-right: 30px;
+  }
+  .hero .content__left-info .info-one p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .hero .content__left-info .info-one span {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .hero .content__right {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-top: 70px;
+  }
+  .hero .content__right .card {
+    right: 30%;
+    left: 30%;
+    bottom: -60px;
+  }
+  .hero .content__right .card-bgc {
+    max-width: 400px;
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+  }
+  .hero .content__bottom {
+    margin-top: 50px;
+    height: 200px;
+  }
+  .hero .content__bottom-link {
+    margin-left: -15px;
+  }
+  .hero .content__bottom-link a {
+    width: 45%;
+  }
+  .hero .content__bottom-link a img {
+    width: 100%;
+  }
+  .hero .content__bottom-link-right {
+    text-align: right;
+  }
+}
+@media (max-width: 432px) {
+  .hero .content__left-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    max-width: 100%;
+  }
+  .hero .content__left-btn .hexagon-btn .span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+  }
+  .hero .content__left-btn a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .hero .content__left-info {
+    width: 100%;
+  }
+  .hero .content__left-info .info-midl {
+    border: 0;
+  }
+  .hero .content__left-info .info-one p {
+    font-family: "Aldrich";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .hero .content__left-info .info-one span {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .hero .content .content__right {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin: 0px 15px 0;
+  }
+  .hero .content .content__right-bgc {
+    width: 324px !important;
+    height: 385px !important;
+    margin-top: -66px;
+    margin-left: -5px;
+  }
+  .hero .content .content__right .card {
+    right: 0%;
+    left: 0%;
+    bottom: -130px;
+    margin-left: -10px;
+  }
+  .hero .content .content__right .card .card__content {
+    width: 324px;
+  }
+  .hero .content .content__right .card .card__content-left {
+    margin-right: 0px;
+  }
+  .hero .content .content__right .card .card__content-left-title {
+    padding: 23px 0 0 22px;
+  }
+  .hero .content .content__right .card .card__content-left-user {
+    padding: 0px 0 0 22px;
+  }
+  .hero .content .content__right .card .card__content-left-user a {
+    padding: 0 0px 0 0px;
+  }
+  .hero .content .content__right .card .card__content-left-text {
+    padding: 5px 0 0 26px;
+  }
+  .hero .content .content__right .card .card__content-left-crypto {
+    padding: 0 0 0 19px;
+  }
+  .hero .content .content__right .card .card__content-right-title {
+    padding: 25px 60px 0 0px;
+  }
+  .hero .content .content__right .card .card__content-right-time {
+    margin: -12px 26px 0 0px;
+  }
+  .hero .content .content__right .card .card__content-right-time-midl {
+    margin: 0 15px;
+  }
+  .hero .content .content__right .card .card__content-right .time-btn span:after {
+    font-size: 40px;
+    top: 0px;
+    right: 0px;
+  }
+  .hero .content__bottom {
+    height: 120px;
+    margin-top: -33px;
+  }
+  .hero .content__bottom-link {
+    padding: 0;
+  }
+  .hero .content__bottom-link a {
+    width: 45%;
+  }
+  .hero .content__bottom-link a img {
+    width: 100%;
+  }
+  .hero .content__bottom-link a .link-img-ether {
+    width: 94px !important;
+    height: 30px;
+    margin-left: 30px;
+  }
+  .hero .content__bottom-link a .link-img-bin {
+    width: 143px !important;
+    height: 29px;
+  }
+  .hero .content__bottom-link a .link-img-block {
+    width: 188px !important;
+    height: 28px;
+    margin-left: -8px;
+  }
+  .hero .content__bottom-link a .link-img-bit {
+    width: 106px !important;
+    height: 17px;
+    margin-left: 40px;
+    margin-top: 2px;
+  }
+  .hero .content__bottom-link-right {
+    text-align: right;
+  }
+}
+@media (max-width: 400px) {
+  .content__right .card {
+    width: 100%;
+    max-width: 374px;
+    right: 0;
+    left: 0;
+    bottom: -80px;
+    margin: 0 auto;
+  }
+  .content__right .card-content {
+    padding-right: 0;
+    width: 100%;
+    max-width: 374px;
+    justify-content: flex-start;
+    flex-basis: 0;
+  }
+  .content__right .card-right {
+    margin-left: 40px;
+  }
+}
+.bubble {
+  position: absolute;
+  z-index: 1;
+}
+.bubble:nth-child(2), .bubble:nth-child(3), .bubble:nth-child(4) {
+  width: 1px;
+  border-radius: 50%;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  opacity: 0.6;
+}
+.bubble:nth-child(2) {
+  top: 600px;
+  left: 250px;
+  box-shadow: 20px 25px 187px 60px #FF00C8;
+}
+.bubble:nth-child(3) {
+  top: 350px;
+  left: 750px;
+  box-shadow: 0px 25px 187px 60px #FFB1EE;
+}
+.bubble:nth-child(4) {
+  top: 300px;
+  left: 1150px;
+  box-shadow: 0px 25px 187px 60px #4A46FF;
+}
+
+.nft {
+  max-width: 1394px;
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 100px;
+  overflow: hidden;
+}
+.nft .nft__text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+  margin-top: 0px;
+  /* swiper-bullets styling */
+}
+.nft .nft__text-title {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px;
+  /* identical to box height */
+  padding-left: 7px;
+  color: #FFFFFF;
+}
+.nft .nft__text-link {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px;
+  /* identical to box height */
+  margin-right: 12px;
+  color: #FFFFFF;
+}
+.nft .nft__text-link img {
+  padding-left: 10px;
+}
+.nft .nft__text-link-next {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  font-size: 12px;
+}
+.nft .nft__text .slider-container {
+  max-width: 1200px;
+  padding: 0 15px;
+  position: relative;
+  margin: 0 auto;
+}
+.nft .nft__text .slider-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.nft .nft__text .swiper-button-prev,
+.nft .nft__text .swiper-button-next {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+.nft .nft__text .swiper-button-prev::after,
+.nft .nft__text .swiper-button-next::after {
+  display: none;
+}
+.nft .nft__text .swiper-button-prev {
+  background-image: url("back.svg");
+}
+.nft .nft__text .swiper-button-next {
+  background-image: url("right.svg");
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: #FFFFFF;
+}
+.nft .nft__text .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 15px;
+  background-color: tomato;
+  opacity: 1;
+}
+.nft .nft__text .swiper-pagination-bullet-active {
+  background-color: navy;
+}
+.nft .swiper-container .swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide {
+  width: 437px;
+  margin-left: 2px;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .img-big {
+  width: 437px;
+  height: 385px;
+  max-height: 437px;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+  backdrop-filter: blur(39.6002px);
+  width: 100%;
+  margin-top: -4px;
+  border: 3px solid rgb(95, 95, 95);
+  width: 437px;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr {
+  display: flex;
+  justify-content: space-around;
+  padding: 38px 0px 20px 8px;
+  width: 437px !important;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left-title {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 46px;
+  color: #FFFFFF;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left .card-user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left .card-user-img {
+  width: 37px;
+  height: 37px;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left .card-user a {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 46px;
+  color: #FFFFFF;
+  margin: 0 5px;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left-text {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 46px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left-nft {
+  display: flex;
+  align-items: center;
+  margin-top: -13px;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left-nft p {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  margin: 0 5px;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left-nft span {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 46px;
+  /* or 320% */
+  /* White/White 100 */
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right {
+  margin-left: -20px;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-title {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 46px;
+  /* or 320% */
+  color: #FFFFFF;
+  opacity: 0.7;
+  padding-left: 12px;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-time {
+  display: flex;
+  justify-content: space-between;
+  margin: -15px 5px 34px 7px;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-time .time-card p {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 46px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: -26px;
+  margin-right: 5px;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-time .time-card span {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 46px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-time .sered-time {
+  margin: 0 20px 0 15px;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovt-right-btn {
+  cursor: pointer;
+  border: 0;
+  padding: 0px;
+  margin-top: -10px;
+  background: linear-gradient(90deg, rgb(60, 121, 212) 0%, rgb(255, 166, 250) 50%);
+  box-shadow: 0px 6px 50px 0px rgba(255, 86, 246, 0.51);
+  transition: box-shadow 0.5s ease-in-out;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovt-right-btn span {
+  display: block;
+  padding: 14px 12px 8px 8px;
+  background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 29px;
+  /* identical to box height */
+  position: relative;
+  color: #FFFFFF;
+  border: 4px solid;
+  border-image-source: linear-gradient(272.52deg, #FFA6FA 47.49%, #3C79D5 98.81%);
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovt-right-btn span img {
+  padding: 5px 0px 0 12px;
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovt-right-btn__button-border:hover {
+  box-shadow: 0px 6px 70px 0px rgb(255, 105, 247);
+}
+.nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovt-right-btn:hover {
+  box-shadow: 0px 6px 70px 0px rgb(255, 105, 247);
+}
+.nft .swiper-container .swiper-wrapper .last-slide {
+  display: inline;
+}
+.nft-button {
+  cursor: pointer;
+  display: none;
+  border: 0;
+  background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
+  padding: 2px;
+  clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+  white-space: nowrap;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.nft-button span {
+  display: block;
+  padding: 20px 100px 20px 40px;
+  color: white;
+  background: rgb(32, 8, 59);
+  clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+  transition: 0.5s;
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 25px;
+  color: #FFFFFF;
+  position: relative;
+}
+.nft-button span:after {
+  content: "→";
+  position: absolute;
+  font-size: 40px;
+  top: 17px;
+  right: 20px;
+}
+
+@media (max-width: 1440px) {
+  .nft {
+    padding: 0 20px;
+  }
+  .nft .swiper-container {
+    width: 963px;
+    overflow: hidden;
+    height: 500px;
+    margin: 0 auto;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide {
+    width: 304px !important;
+    height: 430px;
+    gap: 20px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .img-big {
+    width: 303px;
+    height: 267px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card {
+    display: flex;
+    width: 303px;
+    height: 164px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr {
+    padding: 0px 0px 0px 0px;
+    width: 303px !important;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left-title {
+    font-family: "Rajdhani";
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 27px;
+    padding: 20px 0 0 0;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left .card-user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left .card-user-img {
+    width: 26px;
+    height: 26px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left .card-user a {
+    font-family: "Rajdhani";
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin: 0 5px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left-text {
+    font-family: "Rajdhani";
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 27px;
+    opacity: 0.7;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left-nft {
+    display: flex;
+    align-items: center;
+    margin-top: -13px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left-nft p {
+    font-family: "Orbitron";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7px;
+    line-height: 9px;
+    color: #FFFFFF;
+    margin: 0 5px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left-nft span {
+    font-family: "Rajdhani";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 46px;
+    /* or 320% */
+    /* White/White 100 */
+    color: #FFFFFF;
+    opacity: 0.7;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right {
+    margin-left: -20px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-title {
+    padding: 20px 0 0 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 27px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-time {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 5px 15px 7px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-time .time-card p {
+    font-family: "Rajdhani";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 27px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: -6px;
+    margin-right: 5px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-time .time-card span {
+    font-family: "Rajdhani";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 27px;
+    color: #FFFFFF;
+    opacity: 0.7;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-time .sered-time {
+    margin: 0 20px 0 15px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovt-right-btn {
+    cursor: pointer;
+    border: 0;
+    padding: 0px;
+    margin-top: -10px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovt-right-btn span {
+    display: block;
+    padding: 5px 5px 3px 5px;
+    font-family: "Rajdhani";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovt-right-btn span img {
+    padding: 0px 0px 0 12px;
+  }
+}
+@media (max-width: 768px) {
+  .nft {
+    padding-right: 0;
+    margin-top: 233px;
+  }
+  .nft .nft__text {
+    margin-bottom: 35px;
+  }
+  .nft .nft__text-title {
+    font-family: "Orbitron";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 20px;
+  }
+  .nft .nft__text-link {
+    display: none;
+  }
+  .nft-button {
+    width: 134px;
+    margin-top: -30px;
+  }
+  .nft-button span {
+    display: block;
+    padding: 10px 15px 10px 0px;
+    color: white;
+    font-family: "Orbitron";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    position: relative;
+  }
+  .nft-button span:after {
+    font-size: 40px;
+    top: 0px;
+    right: 0px;
+  }
+}
+@media (max-width: 620px) {
+  .nft .nft__text-title {
+    margin-left: 0px;
+  }
+  .nft .swiper-container .swiper-wrapper {
+    margin-left: 0px;
+    gap: 10px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr {
+    padding: 0px 0px 0px 0px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left {
+    margin-right: 35px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left-title {
+    padding: 28px 0 0 3px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left .card-user {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding-left: 2px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left .card-user-img {
+    width: 26px;
+    height: 26px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left .card-user a {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin: 0 12px 0 5px !important;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left-text {
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 27px;
+    opacity: 0.7;
+    padding: 0px 0 0 3px !important;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left-nft {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    margin: -5px 0 0 0;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left-nft img {
+    width: 19px;
+    height: 19px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left-nft p {
+    font-weight: 700;
+    font-size: 7px;
+    line-height: 9px;
+    color: #FFFFFF;
+    margin: 0 5px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-left-nft span {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 34px;
+    opacity: 0.7;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-title {
+    padding: 28px 0 0 7px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 27px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-time {
+    display: flex;
+    justify-content: space-between;
+    margin: -5px 5px 29px 7px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-time .time-card p {
+    font-family: "Rajdhani";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 27px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: -12px;
+    margin-right: 5px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-time .time-card span {
+    font-family: "Rajdhani";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 27px;
+    color: #FFFFFF;
+    opacity: 0.7;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovr-right-time .sered-time {
+    margin: 0 20px 0 15px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovt-right-btn {
+    cursor: pointer;
+    border: 0;
+    padding: 0px;
+    margin-top: -10px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovt-right-btn span {
+    display: block;
+    padding: 7px 0px 1px 5px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .nft .swiper-container .swiper-wrapper .swiper-slide .slide-card .card-ovr-right .card-ovt-right-btn span img {
+    padding: 0px 0px 0 12px;
+  }
+}
+@media (max-width: 375px) {
+  .nft .nft__text-title {
+    margin-left: 0px;
+  }
+}
+.tabs__container {
+  margin: 206px 0 0 7px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.tabs-header__title {
+  font-family: "Orbitron";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 33px;
+  color: #FFFFFF;
+  padding-top: 4px;
+}
+.tabs-header__blur-element-1 {
+  position: absolute;
+  width: 1px;
+  top: 120px;
+  left: 500px;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  box-shadow: 0px 5px 187px 60px #FF00C8;
+  z-index: -2;
+}
+.tabs-header__container {
+  width: 781px;
+  text-align: right;
+}
+.tabs-header__items {
+  display: flex;
+  margin-top: 44px;
+  gap: 41px;
+}
+.tabs-header__items-left, .tabs-header__items-right {
+  display: flex;
+  flex-direction: column !important;
+}
+.tabs-header__item {
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 38px;
+  font-size: 27px;
+  width: 370px;
+  height: 105px;
+  border: 3px solid;
+  border-image-source: linear-gradient(90deg, rgb(60, 121, 212) 0%, rgb(255, 166, 250) 50%);
+  border-image-slice: 3;
+  opacity: 0.3;
+  transition: background 0.5s ease, opacity 0.5s ease;
+  font-family: "Orbitron";
+  font-size: 26.53px;
+  font-weight: 700;
+  line-height: 33.27px;
+  color: #FFFFFF;
+}
+.tabs-header__item:hover {
+  opacity: 1;
+}
+.tabs-header__item_active {
+  background: linear-gradient(92deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+  opacity: 1;
+}
+.tabs-header__link {
+  padding-top: 3px;
+  display: inline-block;
+}
+.tabs-header__link a {
+  font-family: "Orbitron";
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #FFFFFF;
+  align-items: center;
+}
+.tabs-header__arrow {
+  margin-left: 10px;
+  padding-left: 3px;
+  padding-top: 3px;
+}
+
+.tabs-body {
+  display: flex;
+  justify-content: center;
+}
+.tabs-body__conteiner {
+  position: absolute;
+  top: -47px;
+  right: 47px;
+}
+.tabs-body__block {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.tabs-body__block_active {
+  display: block;
+  opacity: 1;
+}
+.tabs-body__img {
+  width: 430px;
+}
+.tabs-body_active {
+  background: linear-gradient(92deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+  opacity: 1;
+}
+
+@media (max-width: 1440px) {
+  .tabs {
+    padding: 0 20px;
+  }
+  .tabs__container {
+    margin: 170px 15px 0 15px;
+  }
+  .tabs-header__container {
+    width: 100%;
+  }
+  .tabs-header__items {
+    gap: 21px;
+    width: 100%;
+  }
+  .tabs-header__item {
+    width: 350px;
+  }
+  .tabs-header__item_active {
+    opacity: 1;
+  }
+  .tabs-header__link {
+    font-size: 20px;
+  }
+  .tabs-header__arrow {
+    margin-left: 10px;
+  }
+  .tabs-body__conteiner {
+    top: -45px;
+    right: 0px;
+  }
+  .tabs-body__img {
+    width: 400px;
+  }
+}
+@media (max-width: 1240px) {
+  .tabs__container {
+    margin: 120px 15px 0 15px;
+    justify-content: space-around;
+  }
+  .tabs-header__container {
+    text-align: right;
+  }
+  .tabs-header__title {
+    font-size: 11px;
+  }
+  .tabs-header__items {
+    margin-top: 23px;
+    gap: 18px;
+  }
+  .tabs-header__item {
+    padding-top: 15px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    width: 170px;
+    height: 60px;
+  }
+  .tabs-header__link {
+    font-size: 14px;
+    display: inline-block;
+  }
+  .tabs-header__arrow {
+    margin-left: 7px;
+    width: 22px;
+    height: 7;
+  }
+  .tabs-body__conteiner {
+    top: -50px;
+    position: absolute;
+  }
+  .tabs-body__img {
+    width: 280px;
+  }
+}
+@media (max-width: 767px) {
+  .tabs__container {
+    margin: 107px 0 0 0px;
+    position: relative;
+  }
+  .tabs-header {
+    margin: 0 auto;
+  }
+  .tabs-header__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .tabs-header__container {
+    width: 100%;
+    text-align: right;
+  }
+  .tabs-header__items {
+    margin-top: 19px;
+    gap: 18px;
+  }
+  .tabs-header__item {
+    padding-top: 0px;
+    margin-bottom: 18px;
+    font-size: 11px;
+    width: 153px;
+    height: 42px;
+  }
+  .tabs-header__item-magin {
+    margin-bottom: 5px;
+  }
+  .tabs-header__link {
+    font-size: 8px;
+    margin-top: 10px;
+  }
+  .tabs-header__link a {
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 10px;
+  }
+  .tabs-header__arrow {
+    margin-left: 4px;
+  }
+  .tabs-body {
+    margin: 0 auto;
+  }
+  .tabs-body__conteiner {
+    height: 350px;
+    margin: 0 auto;
+    position: static;
+  }
+  .tabs-body__img {
+    padding-left: 10px;
+    max-width: 197px;
+  }
+}
+.bubble-btn {
+  position: absolute;
+  z-index: 1;
+}
+
+.bubble-btn:nth-child(2) {
+  position: absolute;
+  width: 1px;
+  border-radius: 50%;
+  top: 1650px;
+  left: 250px;
+  box-shadow: 0px 25px 187px 60px #FFB1EE;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  opacity: 0.6;
+}
+
+.bubble-btn:nth-child(3) {
+  position: absolute;
+  width: 1px;
+  border-radius: 50%;
+  top: 1750px;
+  left: 1250px;
+  box-shadow: 0px 25px 187px 60px #FF00C8;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  opacity: 0.6;
+}
+
+.bubble-btn:nth-child(4) {
+  position: absolute;
+  width: 1px;
+  border-radius: 50%;
+  top: 3200px;
+  left: 1100px;
+  box-shadow: 0px 25px 187px 60px #FFB1EE;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  opacity: 0.6;
+}
+
+.bubble-btn:nth-child(5) {
+  position: absolute;
+  width: 0px;
+  height: 1000px;
+  border-radius: 50%;
+  top: 1900px;
+  left: 45px;
+  box-shadow: 0px 100px 187px 60px #FFB1EE;
+  -webkit-backdrop-filter: blur(200px);
+  backdrop-filter: blur(200px);
+  opacity: 0.5;
+}
+
+.bubble-btn:nth-child(6) {
+  position: absolute;
+  width: 0px;
+  height: 1000px;
+  border-radius: 50%;
+  top: 1900px;
+  right: 45px;
+  box-shadow: 0px 100px 187px 60px #FFB1EE;
+  -webkit-backdrop-filter: blur(200px);
+  backdrop-filter: blur(200px);
+  opacity: 0.5;
+}
+
+.people {
+  max-width: 1394px;
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 248px;
+  margin-bottom: 100px;
+  /* swiper-bullets styling */
+}
+.people__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.people__text-title {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px;
+  /* identical to box height */
+  padding-left: 8px;
+  color: #FFFFFF;
+}
+.people__text-link {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px;
+  /* identical to box height */
+  margin-right: 15px;
+  color: #FFFFFF;
+}
+.people__text-link img {
+  padding-left: 9px;
+}
+.people .swiper2 {
+  overflow: hidden;
+  margin-top: 47px;
+}
+.people .swiper2 .swiper-wrapper {
+  padding-left: 0px;
+  gap: 24px;
+}
+.people .swiper2 .swiper-wrapper .swiper-slide {
+  width: 437px !important;
+}
+.people .swiper2 .swiper-wrapper .swiper-slide .slide-obert {
+  background: url("../img/people/bgc-people.png") no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  text-align: center;
+  height: 260px;
+  border: 3px solid rgb(121, 118, 118);
+  border-bottom: 0;
+}
+.people .swiper2 .swiper-wrapper .swiper-slide .slide-info {
+  margin-top: -50px;
+  border: 3px solid rgb(121, 118, 118);
+  border-top: 0;
+  width: 100%;
+  padding-bottom: 40px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+  backdrop-filter: blur(39.6002px);
+  padding-top: 60px;
+  position: relative;
+}
+.people .swiper2 .swiper-wrapper .swiper-slide .slide-info .slide-photo {
+  position: absolute;
+  left: 50%;
+  margin-left: -80px;
+  top: -105px;
+}
+.people .swiper2 .swiper-wrapper .swiper-slide .slide-info .slide-info-title {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24.3201px;
+  line-height: 46px;
+  /* or 189% */
+  text-align: center;
+  padding-left: 3px;
+  padding-top: 2px;
+  color: #FFFFFF;
+}
+.people .swiper2 .swiper-wrapper .swiper-slide .slide-info .link-swipers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -15px 0px 0 22px;
+  padding-top: 2px;
+}
+.people .swiper2 .swiper-wrapper .swiper-slide .slide-info .link-swipers a {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20.1601px;
+  line-height: 46px;
+  /* or 229% */
+  color: #FFB1EE;
+  margin-right: 5px;
+}
+.people .swiper2 .swiper-wrapper .swiper-slide .slide-info .sliders-info {
+  display: flex;
+  justify-content: space-around;
+  margin: 7px 10px 0px 10px;
+}
+.people .swiper2 .swiper-wrapper .swiper-slide .slide-info .sliders-info .sliders-info-text p {
+  text-align: center;
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 63px;
+  color: #FFFFFF;
+  margin-bottom: -10px;
+}
+.people .swiper2 .swiper-wrapper .swiper-slide .slide-info .sliders-info .sliders-info-text span {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.people .swiper2 .swiper-wrapper .swiper-slide .slide-info .sliders-btn {
+  text-align: center;
+  margin-top: 44px;
+  margin-left: 10px;
+}
+.people .swiper2 .swiper-wrapper .swiper-slide .slide-info .sliders-btn .btn-slc {
+  cursor: pointer;
+  border: 0;
+  padding: 2px;
+  background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
+}
+.people .swiper2 .swiper-wrapper .swiper-slide .slide-info .sliders-btn .btn-slc span {
+  display: block;
+  padding: 12px 90px;
+  background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19.8983px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.people-button {
+  cursor: pointer;
+  display: none;
+  border: 0;
+  background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
+  padding: 2px;
+  clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+  white-space: nowrap;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.people-button span {
+  display: block;
+  padding: 20px 100px 20px 40px;
+  color: white;
+  background: rgb(32, 8, 59);
+  clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+  transition: 0.5s;
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 25px;
+  color: #FFFFFF;
+  position: relative;
+}
+.people-button span:after {
+  content: "→";
+  position: absolute;
+  font-size: 40px;
+  top: 17px;
+  right: 20px;
+}
+.people .slider-container1 {
+  max-width: 1200px;
+  padding: 0 15px;
+  position: relative;
+  margin: 0 auto;
+}
+.people .slider-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.people .swiper-button-prev,
+.people .swiper-button-next {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+.people .swiper-button-prev::after,
+.people .swiper-button-next::after {
+  display: none;
+}
+.people .swiper-button-prev {
+  background-image: url("back.svg");
+}
+.people .swiper-button-next {
+  background-image: url("right.svg");
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: #FFFFFF;
+}
+.people .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 15px;
+  background-color: tomato;
+  opacity: 1;
+}
+.people .swiper-pagination-bullet-active {
+  background-color: navy;
+}
+
+@media (max-width: 1440px) {
+  .people {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .people .swiper2 {
+    overflow: hidden;
+    margin-top: 47px;
+    width: 950px;
+  }
+  .people .swiper2 .swiper-wrapper {
+    margin-left: 0px;
+    gap: 10px;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide {
+    width: 303px !important;
+    height: 426px !important;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide .slide-obert {
+    width: 100%;
+    text-align: center;
+    height: 190px !important;
+    border: 3px solid rgb(121, 118, 118);
+    border-bottom: 0;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide .slide-info {
+    gap: 20px !important;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .slide-photo {
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+    top: -105px;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .slide-info-title {
+    font-family: "Rajdhani";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 31px;
+    text-align: center;
+    padding-left: 3px;
+    padding-top: 2px;
+    color: #FFFFFF;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .link-swipers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -15px 0px 0 22px;
+    padding-top: 2px;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .link-swipers a {
+    font-family: "Rajdhani";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    color: #FFB1EE;
+    margin-right: 5px;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .sliders-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 10px 0px 10px;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .sliders-info .sliders-info-text p {
+    text-align: center;
+    font-family: "Rajdhani";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 44px;
+    color: #FFFFFF;
+    margin-bottom: -20px;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .sliders-info .sliders-info-text span {
+    font-family: "Rajdhani";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 43px;
+    color: #FFFFFF;
+    opacity: 0.7;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .sliders-btn {
+    text-align: center;
+    margin: 15px auto -20px;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .sliders-btn .btn-slc {
+    cursor: pointer;
+    border: 0;
+    padding: 2px;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .sliders-btn .btn-slc span {
+    display: block;
+    padding: 10px 65px;
+    font-family: "Rajdhani";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+@media (max-width: 932px) {
+  .people {
+    margin-top: 112px;
+  }
+}
+@media (max-width: 542px) {
+  .people {
+    padding-right: 0;
+  }
+  .people__text-title {
+    margin-left: 17px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .people__text-link {
+    display: none;
+  }
+  .people .swiper2 {
+    margin-top: 30px;
+  }
+  .people__button {
+    margin-top: 5px;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide .slide-obert {
+    height: 200px;
+    padding: 0;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .slide-photo {
+    width: 112px;
+    margin: 0;
+    margin-left: -56px;
+    top: 0;
+    top: -70px;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide .slide-info {
+    padding-top: 60px;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .slide-info-title {
+    font-family: "Rajdhani";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: -15px;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .link-swipers a {
+    font-family: "Rajdhani";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 32px;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .sliders-info .sliders-info-text p {
+    font-family: "Rajdhani";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 44px;
+    margin-top: 5px;
+  }
+  .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .sliders-info .sliders-info-text span {
+    font-family: "Rajdhani";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 44px;
+  }
+}
+@media (max-width: 375px) {
+  .people__text-title {
+    margin-left: 0px;
+  }
+}
+.sellers {
+  margin-top: 156px;
+}
+.sellers__text-title {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px;
+  margin: 0 0 0 30px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-right: 0px;
+}
+.sellers__text-title span {
+  color: #FF56F6;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.sellers__text-title .img-span {
+  margin-left: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.sellers__text-title .img-span.active {
+  transform: rotate(0.5turn);
+}
+.sellers__text-text {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+  text-align: center;
+  max-width: 500px;
+  color: #FFFFFF;
+  margin: 0 auto;
+  margin-top: 22px;
+  display: none;
+}
+.sellers__text-text.active {
+  display: block;
+}
+.sellers .sellers-body__overflow-hidden {
+  overflow: hidden;
+  height: 665px;
+  transition: height 0.8s ease-in-out;
+}
+.sellers .sellers-body__content {
+  display: grid;
+  margin: 55px 0 0 5px;
+  grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+  column-gap: 35px;
+  row-gap: 32px;
+}
+.sellers .sellers-body__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 26px 20px 24px 30px;
+  border-radius: 29px;
+  border: 3px solid rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(38px);
+  -webkit-backdrop-filter: blur(38px);
+}
+.sellers .sellers-body__item-wrapper {
+  display: flex;
+  align-items: center;
+}
+.sellers .sellers-body__number {
+  font-family: "Roboto";
+  font-size: 19px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+.sellers .sellers-body img {
+  margin-left: 14px;
+}
+.sellers .sellers-body__info {
+  margin-left: 14px;
+}
+.sellers .sellers-body__title-name {
+  margin: 3px 0 7px 0;
+  font-size: 19px;
+  font-weight: 500;
+  font-family: "Roboto";
+  color: #FFFFFF;
+  padding-bottom: 13px;
+}
+.sellers .sellers-body__crypto {
+  display: flex;
+  align-items: center;
+  margin-left: -15px;
+}
+.sellers .sellers-body__score-cryptocurrency {
+  margin-left: 4px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Roboto";
+  font-size: 14px;
+}
+.sellers .sellers-body__score {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Roboto";
+  margin: 15px 0 0 0px;
+  padding: 5px 18px 6px 18px;
+  border-radius: 18px;
+}
+.sellers .sellers-body .green {
+  color: #0F6;
+  border: 1px solid rgba(0, 178, 71, 0.72);
+  background: rgba(0, 178, 71, 0.15);
+}
+.sellers .sellers-body .red {
+  color: #F00;
+  border: 1px solid rgba(178, 0, 0, 0.72);
+  background: linear-gradient(180deg, rgba(235, 20, 20, 0.15) 0%, rgba(235, 20, 20, 0.1) 100%);
+}
+.sellers__btn {
+  max-width: 250px;
+  margin: 55px auto;
+  text-align: center;
+}
+.sellers__btn .sellers__btn-desktop {
+  cursor: pointer;
+  border: 0;
+  padding: 2px;
+  background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
+}
+.sellers__btn .sellers__btn-desktop span {
+  display: block;
+  padding: 11px 75px;
+  background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19.8983px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.sellers__btn .sellers__btn-mobile {
+  cursor: pointer;
+  display: none;
+  border: 0;
+  background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
+  padding: 2px;
+  -webkit-clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+  clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+  white-space: nowrap;
+}
+.sellers__btn .sellers__btn-mobile span {
+  display: block;
+  padding: 20px 100px 20px 40px;
+  color: white;
+  background: rgb(32, 8, 59);
+  -webkit-clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+  clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+  transition: 0.5s;
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19.8983px;
+  line-height: 25px;
+  color: #FFFFFF;
+  position: relative;
+}
+.sellers__btn .sellers__btn-mobile span:after {
+  content: "→";
+  position: absolute;
+  font-size: 40px;
+  top: 17px;
+  right: 40px;
+}
+
+@media (max-width: 1440px) {
+  .sellers {
+    padding: 0 20px;
+  }
+  .sellers .sellers-body__overflow-hidden {
+    height: 675px;
+  }
+  .sellers .sellers-body_active {
+    height: 977px;
+  }
+  .sellers .sellers-body__content {
+    grid-template-columns: repeat(2, minmax(360px, 1fr));
+  }
+  .sellers .sellers-body__item {
+    padding: 26px 20px 24px 30px;
+    border-radius: 29px;
+  }
+}
+@media (max-width: 1240px) {
+  .sellers {
+    padding: 0 20px;
+  }
+  .sellers .sellers-body__overflow-hidden {
+    height: 530px;
+  }
+  .sellers .sellers-body_active {
+    height: 740px;
+  }
+  .sellers .sellers-body__content {
+    margin: 37px 0 0 0;
+    grid-template-columns: repeat(2, minmax(316px, 1fr));
+    column-gap: 10px;
+    row-gap: 25px;
+  }
+  .sellers .sellers-body__item {
+    padding: 20px 14px 19px 21px;
+    border-radius: 21px;
+  }
+  .sellers .sellers-body__number {
+    font-size: 14px;
+  }
+  .sellers .sellers-body__img {
+    margin-left: 12px;
+    width: 51px;
+  }
+  .sellers .sellers-body__info {
+    margin-left: 10px;
+  }
+  .sellers .sellers-body__title-name {
+    margin: 1px 0 12px 0;
+    font-size: 14px;
+  }
+  .sellers .sellers-body__score-cryptocurrency {
+    margin-left: 3px;
+    font-family: "Roboto";
+    font-size: 10px;
+  }
+  .sellers .sellers-body__score {
+    font-size: 11px;
+    margin: 15px 0 0 0px;
+    padding: 4px 13px 4px 12px;
+    border-radius: 18px;
+  }
+}
+@media (max-width: 920px) {
+  .sellers {
+    padding: 0 20px;
+  }
+  .sellers .sellers__btn .sellers__btn-desktop {
+    display: none;
+  }
+  .sellers .sellers__btn .sellers__btn-mobile {
+    display: block;
+    margin: -40px auto 0;
+  }
+  .sellers .sellers__btn .sellers__btn-mobile span {
+    display: block;
+    padding: 10px 50px 10px 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .sellers .sellers__btn .sellers__btn-mobile span:after {
+    font-size: 40px;
+    top: 3px;
+    right: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .sellers {
+    margin-top: 150px;
+    padding: 0 20px;
+  }
+  .sellers .sellers-body__overflow-hidden {
+    height: 480px;
+  }
+  .sellers .sellers-body_active {
+    height: 1380px;
+  }
+  .sellers .sellers-body__content {
+    margin: 27px 0 0 5px;
+    grid-template-columns: repeat(1, minmax(317px, 1fr));
+    row-gap: 24px;
+  }
+  .sellers .sellers-body__item {
+    padding: 16px 14px 15px 21px;
+    border-radius: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.28);
+  }
+  .sellers .sellers-body__number {
+    font-size: 14px;
+  }
+  .sellers .sellers-body__info {
+    margin-left: 10px;
+  }
+  .sellers .sellers-body__title-name {
+    margin: 1px 0 12px 0;
+    font-size: 14px;
+  }
+  .sellers .sellers-body__score-cryptocurrency {
+    margin-left: 3px;
+    font-size: 10px;
+  }
+  .sellers .sellers-body__score {
+    font-size: 11px;
+    margin: 10px 0 0 0px;
+    padding: 4px 14px 5px 14px;
+    border-radius: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .sellers__text-title {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    margin: 0 0 0 15px;
+  }
+  .sellers__text-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    margin: 21px 0 0 0px;
+  }
+}
+@media (max-width: 500px) {
+  .sellers .sellers-body__content {
+    row-gap: 28px;
+  }
+  .sellers .sellers-body__title-name {
+    margin: 5px 0 8px 0;
+    padding: 0;
+  }
+  .sellers .sellers__btn .sellers__btn-mobile {
+    display: block;
+    margin: -45px auto 0;
+  }
+}
+.what {
+  margin-top: 163px;
+  background: url("../img/bgc-what.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 556px;
+}
+
+.what__content {
+  display: flex;
+  justify-content: flex-end;
+}
+.what__content-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(72.8013px);
+  border: 2px solid rgb(85, 84, 84);
+  padding: 58px 47px 50px 68px;
+  max-width: 577px;
+  margin-top: 200px;
+  margin-right: 32px;
+}
+.what__content-box .box-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 60px;
+  /* or 135% */
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  width: 370px;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+.what__content-box .box-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20.0292px;
+  line-height: 36px;
+  /* or 178% */
+  font-feature-settings: "salt" on, "liga" off;
+  color: #FFFFFF;
+  margin-top: 16px;
+}
+.what__content-box .box-video {
+  margin-top: 42px;
+  display: flex;
+  align-items: center;
+}
+.what__content-box .box-video .link-box {
+  display: flex;
+  align-items: center;
+  margin-left: 45px;
+}
+.what__content-box .box-video a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17.8037px;
+  line-height: 27px;
+  /* identical to box height, or 150% */
+  font-feature-settings: "salt" on, "liga" off;
+  color: #FFFFFF;
+}
+.what__content-box .box-video a img {
+  padding-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .what {
+    height: 300px;
+    margin-top: 105px;
+  }
+  .what .what__content {
+    justify-content: center;
+  }
+  .what .what__content-box {
+    margin-top: 120px;
+    max-width: 335px;
+    padding: 20px 27px 25px 30px;
+    margin: 129px auto;
+  }
+  .what .what__content-box .box-title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 35px;
+    margin-left: 0;
+    font-feature-settings: "salt" on, "liga" off;
+    width: 209px;
+  }
+  .what .what__content-box .box-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 21px;
+    font-feature-settings: "salt" on, "liga" off;
+    width: 260px;
+    margin-top: 11px;
+  }
+  .what .what__content-box .box-video {
+    margin: 20px 0 0 0;
+  }
+  .what .what__content-box .box-video a {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
+.subscribe {
+  display: flex;
+  margin-top: 290px;
+  padding-bottom: 150px;
+}
+.subscribe__left {
+  background: url("../img/img-form.png") no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 50%;
+  margin-left: 10px;
+}
+.subscribe__right {
+  width: 45%;
+  padding-top: 30px;
+  max-width: 580px;
+  padding-left: 75px;
+}
+.subscribe__right-title {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 50px;
+  /* identical to box height */
+  font-feature-settings: "salt" on, "liga" off;
+  color: #FFFFFF;
+}
+.subscribe__right-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 35px;
+  /* or 178% */
+  margin-top: 30px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #FFFFFF;
+}
+.subscribe__right-form {
+  display: flex;
+  margin-top: 52px;
+}
+.subscribe__right-form input {
+  padding: 10px 18px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+  /* identical to box height, or 171% */
+  font-feature-settings: "salt" on, "liga" off;
+  /* Text / Gray 800 */
+  color: #474A57;
+  border-radius: 5.5273px 0px 0px 5.5273px;
+}
+.subscribe__right-form button {
+  border-radius: 0px 5.5273px 5.5273px 0px;
+  cursor: pointer;
+  margin-left: 7px;
+  padding: 2px;
+  background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
+  border: 0;
+  border-radius: 0px 5.5273px 5.5273px 0px;
+}
+.subscribe__right-form button span {
+  display: block;
+  padding: 11px 33px;
+  background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 0px 5.5273px 5.5273px 0px;
+}
+
+@media (max-width: 1260px) {
+  .sub {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1260px) {
+  .sub {
+    padding: 0 20px;
+  }
+  .sub .subscribe {
+    flex-direction: column-reverse;
+  }
+  .sub .subscribe__left {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+  }
+  .sub .subscribe__right {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .sub {
+    margin-top: 100px;
+  }
+  .sub .subscribe__right-title {
+    font-family: "Orbitron";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+  }
+  .sub .subscribe__right-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+  }
+  .sub .subscribe__right-form {
+    margin-top: 30px;
+  }
+  .sub .subscribe__right-form input {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+    padding: 9px 12px;
+  }
+  .sub .subscribe__right-form button span {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+@media (max-width: 432px) {
+  .sub {
+    padding: 0 25px;
+  }
+  .sub .subscribe {
+    margin-top: 210px;
+    padding-bottom: 0px;
+  }
+  .sub .subscribe .subscribe__left {
+    width: 326px;
+    height: 380px;
+    background-position: center;
+    margin: 57px auto;
+  }
+  .sub .subscribe__right-title {
+    font-family: "Orbitron";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+  }
+  .sub .subscribe__right-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    margin-top: 15px;
+  }
+  .sub .subscribe__right-form {
+    margin-top: 32px;
+  }
+  .sub .subscribe__right-form input {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+    padding: 9px 9px;
+  }
+  .sub .subscribe__right-form button {
+    margin-left: 5px;
+  }
+  .sub .subscribe__right-form button span {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    padding: 8px 22px;
+  }
+}
+.footer {
+  max-width: 1400px;
+  padding: 3px;
+  margin: 0 auto;
+}
+.footer a {
+  font-family: "Inter";
+}
+.footer__content {
+  margin-top: 14px;
+  width: 1339px;
+}
+.footer__horizontal-line {
+  width: 100%;
+  height: 1px;
+  opacity: 0.2;
+  background: #FFFFFF;
+}
+.footer__margin {
+  margin-top: 85px;
+}
+.footer__block {
+  display: flex;
+}
+.footer .footer-main-info__content {
+  margin-top: 98px;
+}
+.footer .footer-main-info__logo-link {
+  width: 140px;
+}
+.footer .footer-main-info_text {
+  color: #D9DBE1;
+  font-size: 15px;
+  margin-top: 32px;
+  width: 288px;
+  font-family: "Inter";
+  font-weight: 400;
+  line-height: 171%;
+}
+.footer .footer-main-info__Items {
+  margin-top: 27px;
+  gap: 18px;
+  display: flex;
+}
+.footer .footer-menu__content {
+  gap: 33px;
+  margin: 98px 0 0 65px;
+  display: flex;
+}
+.footer .footer-menu__colum {
+  width: 177px;
+}
+.footer .footer-menu__titel-section {
+  pointer-events: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footer-menu__title {
+  color: #D9DBE1;
+  font-size: 20px;
+  font-family: "Inter";
+  font-weight: 500;
+}
+.footer .footer-menu__arrow-menu {
+  display: none;
+}
+.footer .footer-menu__items {
+  display: grid !important;
+  margin-top: 25px;
+  gap: 15px;
+  padding-left: 0;
+  list-style: none;
+}
+.footer .footer-menu__horizontal-line {
+  display: none;
+  width: 100%;
+  height: 1px;
+  opacity: 0.2;
+  background: #FFFFFF;
+}
+.footer .footer-menu_item:hover {
+  text-shadow: -5px -5px 25px rgb(255, 105, 247), 5px -5px 25px rgb(255, 105, 247), -5px 5px 25px rgb(255, 105, 247), 5px 5px 25px rgb(255, 105, 247);
+}
+.footer .footer-menu__new {
+  color: #2EC5CE;
+  font-size: 22px;
+  font-weight: 400;
+  margin-left: 9px;
+  line-height: 17px;
+  font-family: "MuseoModerno";
+}
+.footer .footer-menu__item {
+  text-decoration: none !important;
+}
+.footer .footer-menu__item a {
+  color: #D9DBE1;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 171%;
+  transition: text-shadow 0.5s ease-in-out;
+}
+.footer .footer-copyright__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 42px;
+}
+.footer .footer-copyright__text {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Inter";
+  color: #D9DBE1;
+}
+.footer .footer-copyright__items {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  gap: 13px;
+}
+.footer .footer-copyright__item {
+  font-size: 15px;
+  font-weight: 400;
+  transition: text-shadow 0.5s ease-in-out;
+}
+.footer .footer-copyright__item a {
+  color: #D9DBE1;
+}
+.footer .footer-copyright__item:hover {
+  text-shadow: -5px -5px 25px rgb(255, 105, 247), 5px -5px 25px rgb(255, 105, 247), -5px 5px 25px rgb(255, 105, 247), 5px 5px 25px rgb(255, 105, 247);
+}
+.footer .footer-copyright__vertical-line {
+  background-color: #D9DBE1;
+  width: 2px;
+  height: 17px;
+}
+
+@media (max-width: 1440px) {
+  .footer {
+    padding: 0 20px;
+  }
+  .footer__content {
+    margin-top: 120px;
+    width: 100%;
+  }
+  .footer__margin {
+    margin-top: 50px;
+  }
+  .footer .footer-main-info__content {
+    margin-top: 70px;
+  }
+  .footer .footer-main-info_text {
+    width: 200px;
+  }
+  .footer .footer-main-info__Items {
+    margin-top: 27px;
+    gap: 18px;
+  }
+  .footer .footer-menu__colum {
+    width: 160px;
+  }
+}
+@media (max-width: 1240px) {
+  .footer {
+    padding: 0 20px;
+  }
+  .footer__content {
+    margin-top: 108px;
+  }
+  .footer__block {
+    display: grid !important;
+  }
+  .footer__margin {
+    display: none;
+  }
+  .footer .footer-main-info__content {
+    margin-top: 32px;
+  }
+  .footer .footer-main-info_text {
+    color: #D9DBE1;
+    width: 80%;
+  }
+  .footer .footer-menu__content {
+    gap: 16px;
+    margin: 50px 0 0 0px;
+    display: grid !important;
+  }
+  .footer .footer-menu__horizontal-line {
+    display: flex;
+  }
+  .footer .footer-menu__colum {
+    width: 95%;
+    height: 31px;
+    overflow: hidden;
+    transition: height 0.8s ease-in-out;
+  }
+  .footer .footer-menu__colum_active {
+    height: 270px;
+  }
+  .footer .footer-menu__titel-section {
+    pointer-events: auto;
+  }
+  .footer .footer-menu__arrow-menu {
+    display: flex;
+    transform: rotate(0deg);
+    transition: all 0.8s ease-in-out;
+  }
+  .footer .footer-menu__arrow-menu_active {
+    transform: rotate(180deg);
+  }
+  .footer .footer-menu__items {
+    margin: 30px 0 0 15px;
+  }
+  .footer .footer-copyright__content {
+    margin-top: 44px;
+  }
+  .footer .footer-copyright__item:last-child {
+    display: none;
+  }
+  .footer .footer-copyright__vertical-line {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    margin: -55px 3px 0;
+  }
+  .footer .footer-main-info__content {
+    margin-top: 26px;
+  }
+  .footer .footer-main-info_text {
+    color: #D9DBE1;
+    width: 100%;
+  }
+  .footer .footer-menu {
+    margin-top: 20px;
+  }
+  .footer .footer-menu__content {
+    gap: 16px;
+    margin: 38px 0 0 0px;
+  }
+  .footer .footer-menu__colum {
+    height: 31px;
+  }
+  .footer .footer-menu__colum_active {
+    height: 270px;
+  }
+  .footer .footer-menu__arrow-menu {
+    transform: rotate(0deg);
+  }
+  .footer .footer-menu__arrow-menu_active {
+    transform: rotate(180deg);
+  }
+  .footer .footer-copyright {
+    margin-bottom: 100px;
+  }
+  .footer .footer-copyright__items {
+    margin: 0 auto;
+    gap: 40px;
+  }
+  .footer .footer-copyright__content {
+    flex-direction: column-reverse;
+  }
+  .footer .footer-copyright__text {
+    margin-top: 50px;
+    text-align: center;
+  }
+}

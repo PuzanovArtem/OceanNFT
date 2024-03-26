@@ -1,0 +1,813 @@
+.nft{
+    max-width: 1394px;
+    
+    width: 100%;
+    margin: 0px auto ;
+    margin-top: 100px;
+    overflow: hidden;
+    .nft__text{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 45px;
+        margin-top: 0px;
+
+        &-title{
+            font-family: 'Orbitron';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 33px;
+            /* identical to box height */
+            padding-left: 7px;
+
+            color: #FFFFFF;
+        }
+
+        &-link{
+            font-family: 'Orbitron';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 33px;
+            /* identical to box height */
+
+            margin-right: 12px;
+            color: #FFFFFF;
+
+            img{
+                padding-left: 10px;
+            }
+            &-next{
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                padding: 0;
+                font-size: 12px;
+            }
+        }
+//----------------
+        .slider-container {
+            max-width: 1200px;
+            padding: 0 15px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .slider-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            background-color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+        }
+
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            display: none;
+        }
+
+        .swiper-button-prev {
+            background-image: url("back.svg");
+        }
+
+        .swiper-button-next {
+            background-image: url("right.svg");
+            content: "";
+            width: 50px;
+            height: 50px;
+            background: #FFFFFF;
+        }
+
+        /* swiper-bullets styling */
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            margin: 0 15px;
+            background-color: tomato;
+            opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: navy;
+        }
+//---------------------------------------
+        
+    }
+    
+    .swiper-container{
+        // overflow: hidden;
+
+        .swiper-wrapper{
+           display: flex;
+           justify-content: space-between;
+           gap: 0px;
+           
+           
+            
+           .swiper-slide{
+                width: 437px;
+                margin-left: 2px;
+                .img-big{
+                    // width: 100%;
+                    width: 437px;
+                    // height: 100%;
+                    height: 385px;
+                    max-height: 437px;
+                }
+
+                .slide-card{
+                    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+                    backdrop-filter: blur(39.6002px);
+                    width: 100%;
+                    margin-top: -4px;
+                    border: 3px solid rgb(95, 95, 95);
+                    width: 437px;
+                    .card-ovr{
+                        display: flex;
+                        justify-content: space-around;
+                        padding: 38px 0px 20px 8px;
+                        width: 437px !important;
+                        &-left{
+
+                            &-title{
+                                font-family: 'Rajdhani';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 23px;
+                                line-height: 46px;
+                                color: #FFFFFF;
+
+                            }
+
+                            .card-user{
+                                display: flex;
+                                align-items: center;
+                                margin-bottom: 5px;
+                                
+
+                                &-img{
+                                    width: 37px;
+                                    height: 37px;
+                                }
+
+                                a{
+                                    font-family: 'Rajdhani';
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 20px;
+                                    line-height: 46px;
+                                    color: #FFFFFF;
+                                    margin: 0 5px;
+                                }
+                            }
+
+                            &-text{
+                                font-family: 'Rajdhani';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 46px;
+                                // /* or 320% *
+                                
+                                color: #FFFFFF;
+
+                                opacity: 0.7;
+                            }
+
+                            &-nft{
+                                display: flex;
+                                align-items: center;
+                                margin-top: -13px;
+                                
+                                p{
+                                    font-family: 'Orbitron';
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 12px;
+                                    line-height: 16px;
+
+                                    color: #FFFFFF;
+                                    margin: 0 5px;
+                                }
+
+                                span{
+                                    font-family: 'Rajdhani';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 46px;
+                                    /* or 320% */
+
+                                    /* White/White 100 */
+
+                                    color: #FFFFFF;
+
+                                    opacity: 0.7;
+                                }
+                            }
+                        }
+
+                        &-right{
+
+                            margin-left: -20px;
+                            
+                            .card-ovr-right-title{
+                                font-family: 'Rajdhani';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 46px;
+                                /* or 320% */
+
+                                color: #FFFFFF;
+
+                                opacity: 0.7;
+                                padding-left: 12px;
+                            }
+
+                            .card-ovr-right-time{
+                                display: flex;
+                                justify-content: space-between;
+                                // margin-top: -15px;
+                                // margin-bottom: 34px;
+                                margin: -15px 5px 34px 7px ;
+
+                                .time-card{
+
+                                    p{
+                                        
+                                        font-family: 'Rajdhani';
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 23px;
+                                        line-height: 46px;
+                                        color: #FFFFFF;
+                                        text-align: center;
+                                        margin-bottom: -26px;
+                                        margin-right: 5px;
+                                    }
+
+                                    span{
+                                        font-family: 'Rajdhani';
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        line-height: 46px;
+                                        color: #FFFFFF;
+                                        
+                                        opacity: 0.7;
+                                    }
+                                }
+
+                                .sered-time{
+                                    margin: 0 20px 0 15px;
+                                    // margin-left: 15px;
+                                    // margin-right: 20px;
+                                }
+                            }
+
+                            .card-ovt-right-btn{
+                                cursor: pointer;
+                                border: 0;
+                                padding: 0px;
+                                margin-top: -10px;
+                                // background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%); 
+                                background: linear-gradient(90deg, rgba(60,121,212,1) 0%, rgba(255,166,250,1) 50%); 
+                                    box-shadow: 0px 6px 50px 0px rgba(255, 86, 246, 0.51);
+                                    transition: box-shadow 0.5s ease-in-out; 
+
+                                span{
+                                    display: block;
+                                    padding: 14px 12px 8px 8px;
+                                    
+                                    background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+                                    
+                                    
+                                    font-family: 'Rajdhani';
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 23px;
+                                    line-height: 29px;
+                                    /* identical to box height */
+                                    position: relative;
+        
+                                    color: #FFFFFF;
+                                    
+                                    border: 4px solid ;
+
+                                    border-image-source: linear-gradient(272.52deg, #FFA6FA 47.49%, #3C79D5 98.81%);
+
+                                   
+
+                                    
+                                    
+                                    
+                                    img{
+                                        padding: 5px 0px 0 12px;
+                                    }
+                                }
+                                // &__button-border {
+                                //     padding: 2px;
+                                //     background: linear-gradient(90deg, rgba(60,121,212,1) 0%, rgba(255,166,250,1) 50%); 
+                                //     box-shadow: 0px 6px 50px 0px rgba(255, 86, 246, 0.51);
+                                //     transition: box-shadow 0.5s ease-in-out;            
+                                // }
+
+                                &__button-border:hover  {
+                                    box-shadow: 0px 6px 70px 0px rgb(255, 105, 247);
+                                }
+                            }
+                            .card-ovt-right-btn:hover  {
+                                box-shadow: 0px 6px 70px 0px rgb(255, 105, 247);
+                            }
+                        }
+                    }
+                }
+            }
+
+           .last-slide{
+            display: inline;
+           }
+        }
+    }
+    &-button{
+        cursor: pointer;
+        display: none;
+        border: 0;
+        background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%); 
+        padding: 2px; 
+        clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+        white-space: nowrap;
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 40px;
+
+        span{
+            display: block;
+            padding: 20px 100px 20px 40px; 
+            color: white;
+            background: rgba(32, 8, 59, 1);
+            clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+            transition: 0.5s;
+            font-family: 'Orbitron';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 25px;
+
+            color: #FFFFFF;
+
+            position: relative;
+        }span:after{
+            content: '→';
+            position: absolute;
+            font-size: 40px;
+            top: 17px;
+            right: 20px;
+        } 
+    }    
+}
+
+@media(max-width:1440px){
+    .nft{
+        padding: 0 20px;
+        
+        .swiper-container{
+            width: 963px ;
+            overflow: hidden;
+            height: 500px;
+            margin: 0 auto;
+            .swiper-wrapper{
+                
+                .swiper-slide{
+                    width: 304px !important;
+                    height: 430px;
+                    gap: 20px;
+
+                    .img-big{
+                        width: 303px;
+                        height: 267px;
+                    }
+                
+                    .slide-card{
+                        display: flex;
+                        width: 303px;
+                        height: 164px;
+                        
+                        .card-ovr{
+                            padding: 0px 0px 0px 0px;
+                            width: 303px !important;
+
+                            &-left{
+
+                                &-title{
+                                    font-family: 'Rajdhani';
+                                    font-size: 13px;
+                                    font-weight: 700;
+                                    line-height: 27px;
+                                    padding: 20px 0 0 0 ;
+
+                                }
+
+                                .card-user{
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 5px;
+                                    
+
+                                    &-img {
+                                        width: 26px ;
+                                        height: 26px ;
+                                    }
+
+                                    a{
+                                        font-family: 'Rajdhani';
+                                        font-size: 11px;
+                                        font-weight: 600;
+                                        line-height: 27px;
+
+
+                                        color: #FFFFFF;
+                                        margin: 0 5px;
+                                    }
+                                }
+
+                                &-text{
+                                    font-family: 'Rajdhani';
+                                    font-size: 8px;
+                                    font-weight: 600;
+                                    line-height: 27px;
+                                
+                                    opacity: 0.7;
+                                }
+
+                                &-nft{
+                                    display: flex;
+                                    align-items: center;
+                                    margin-top: -13px;
+                                    
+                                    p{
+                                        font-family: 'Orbitron';
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 7px;
+                                        line-height: 9px;
+
+                                        color: #FFFFFF;
+                                        margin: 0 5px;
+                                    }
+
+                                    span{
+                                        font-family: 'Rajdhani';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        line-height: 46px;
+                                        /* or 320% */
+
+                                        /* White/White 100 */
+
+                                        color: #FFFFFF;
+
+                                        opacity: 0.7;
+                                    }
+                                }
+                            }
+
+                            &-right{
+
+                                margin-left: -20px;
+                                
+                                .card-ovr-right-title{
+                                    padding: 20px 0 0 0;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 8px;
+                                    line-height: 27px;
+                                    
+                                }
+
+                                .card-ovr-right-time{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    // margin-top: -15px;
+                                    // margin-bottom: 34px;
+                                    margin: 0px 5px 15px 7px ;
+
+                                    .time-card{
+
+                                        p{
+                                            
+                                            font-family: 'Rajdhani';
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            font-size: 13px;
+                                            line-height: 27px;
+                                            color: #FFFFFF;
+                                            text-align: center;
+                                            margin-bottom: -6px;
+                                            margin-right: 5px;
+                                        }
+
+                                        span{
+                                            font-family: 'Rajdhani';
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            font-size: 8px;
+                                            line-height: 27px;
+                                            color: #FFFFFF;
+                                            
+                                            opacity: 0.7;
+                                        }
+                                    }
+
+                                    .sered-time{
+                                        margin: 0 20px 0 15px;
+                                        // margin-left: 15px;
+                                        // margin-right: 20px;
+                                    }
+                                }
+
+                                .card-ovt-right-btn{
+                                    cursor: pointer;
+                                    border: 0;
+                                    padding: 0px;
+                                    margin-top: -10px;
+                                   
+                                    span{
+                                        display: block;
+                                        padding: 5px 5px 3px 5px;
+
+                                        font-family: 'Rajdhani';
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 13px;
+                                        line-height: 17px;
+                                        
+                                        img{
+                                            padding: 0px 0px 0 12px;
+                                        }
+                                    }
+                                    
+                                    
+                                }
+                               
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+
+    .nft{
+        padding-right: 0;
+        margin-top: 233px;
+
+        .nft__text{
+            margin-bottom: 35px;
+            &-title{
+                font-family: 'Orbitron';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                margin-left: 20px;
+            }
+
+            &-link{
+                display: none;
+
+            }
+        }
+        &-button{
+            width: 134px;
+            margin-top: -30px;
+
+            span{
+                display: block;
+                padding: 10px 15px 10px 0px; 
+                color: white;
+               
+                font-family: 'Orbitron';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+    
+                color: #FFFFFF;
+    
+                position: relative;
+            }span:after{
+                
+                font-size: 40px;
+                top: 0px;
+                right: 0px;
+            } 
+        } 
+
+    }
+}
+
+@media(max-width:620px){
+    .nft{
+        .nft__text{
+            &-title{
+                margin-left: 0px;
+            }
+        }
+        .swiper-container{
+            
+            .swiper-wrapper{
+                margin-left: 0px;
+                gap: 10px;
+                
+                .swiper-slide{
+
+                    .slide-card{
+
+                        .card-ovr{
+                            padding: 0px 0px 0px 0px;
+                            
+
+                            &-left{
+                                margin-right: 35px;
+                                &-title{
+                                    
+                                    padding: 28px 0 0 3px ;
+
+                                }
+
+                                .card-user{
+                                    
+                                    margin-bottom: 10px;
+                                    margin-top: 5px;
+                                    padding-left: 2px;
+
+                                    &-img {
+                                        width: 26px ;
+                                        height: 26px ;
+                                    }
+
+                                    a{
+                                        
+                                        font-size: 11px;
+                                        font-weight: 600;
+                                        line-height: 27px;
+
+
+                                        color: #FFFFFF;
+                                        margin: 0 12px 0 5px !important;
+                                    }
+                                }
+
+                                &-text{
+                                    
+                                    font-size: 8px;
+                                    font-weight: 600;
+                                    line-height: 27px;
+                                
+                                    opacity: 0.7;
+                                    padding: 0px 0 0 3px !important;
+                                }
+
+                                &-nft{
+                                    display: flex;
+                                    align-items: center;
+                                    
+                                    height: 25px;
+                                    margin:  -5px 0 0 0;
+                                    img{
+                                        width: 19px;
+                                        height: 19px;
+                                    }
+                                    p{
+                                        
+                                        font-weight: 700;
+                                        font-size: 7px;
+                                        line-height: 9px;
+
+                                        color: #FFFFFF;
+                                        margin: 0 5px;
+                                    }
+
+                                    span{
+                                        
+                                        font-weight: 400;
+                                        font-size: 10px;
+                                        line-height: 34px;
+                                        
+
+                                        opacity: 0.7;
+                                    }
+                                }
+                            }
+
+                            &-right{
+                                
+                               
+                                
+                                .card-ovr-right-title{
+                                    padding: 28px 0 0 7px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 8px;
+                                    line-height: 27px;
+                                    
+                                }
+
+                                .card-ovr-right-time{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    
+                                    margin: -5px 5px 29px 7px ;
+
+                                    .time-card{
+
+                                        p{
+                                            
+                                            font-family: 'Rajdhani';
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            font-size: 13px;
+                                            line-height: 27px;
+                                            color: #FFFFFF;
+                                            text-align: center;
+                                            margin-bottom: -12px;
+                                            margin-right: 5px;
+                                        }
+
+                                        span{
+                                            font-family: 'Rajdhani';
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            font-size: 8px;
+                                            line-height: 27px;
+                                            color: #FFFFFF;
+                                            
+                                            opacity: 0.7;
+                                        }
+                                    }
+
+                                    .sered-time{
+                                        margin: 0 20px 0 15px;
+                                        
+                                    }
+                                }
+
+                                .card-ovt-right-btn{
+                                    cursor: pointer;
+                                    border: 0;
+                                    padding: 0px;
+                                    margin-top: -10px;
+                                   
+                                    span{
+                                        display: block;
+                                        padding: 7px 0px 1px 5px;
+
+                                        font-weight: 600;
+                                        font-size: 13px;
+                                        line-height: 17px;
+                                        
+                                        img{
+                                            padding: 0px 0px 0 12px;
+                                        }
+                                    }
+                                    
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+
+@media(max-width:375px){
+    .nft{
+        .nft__text{
+            &-title{
+                margin-left: 0px;
+            }
+        }
+    }
+}

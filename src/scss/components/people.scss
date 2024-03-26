@@ -1,0 +1,529 @@
+.people{
+    max-width: 1394px;
+    
+    width: 100%;
+    margin: 0px auto ;
+    margin-top: 248px;
+    margin-bottom: 100px;
+    
+    &__text{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-title{
+            font-family: 'Orbitron';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 33px;
+            /* identical to box height */
+            padding-left: 8px;
+
+            color: #FFFFFF;
+        }
+
+        &-link{
+            font-family: 'Orbitron';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 33px;
+            /* identical to box height */
+
+            margin-right: 15px;
+            color: #FFFFFF;
+
+            img{
+                padding-left: 9px;
+            }
+        }
+        // &-link::after{
+        //     // content: '→';
+        //     // position: absolute;
+        //         font-size: 40px;
+        //         margin-top: 5px;
+        //         padding-left: 20px;
+        // }
+    }
+
+    .swiper2{
+        overflow: hidden;
+        margin-top: 47px;
+        
+        .swiper-wrapper{
+            // display: flex;
+            // justify-content: space-between;
+            padding-left: 0px;
+            gap: 24px;
+            
+            .swiper-slide{
+                width: 437px !important;
+
+                .slide-obert{
+                    background: url('../img/people/bgc-people.png') no-repeat;
+                    // background-size: contain;
+                    background-size: cover;
+                    background-position: top center;
+                    width: 100%;
+                    text-align: center;
+                    height: 260px;
+               
+                    border: 3px solid rgb(121, 118, 118);
+                    border-bottom: 0;
+                }
+
+                .slide-info{
+                    margin-top: -50px;
+                    border: 3px solid rgb(121, 118, 118);
+                    border-top: 0;
+                    width: 100%;
+                    padding-bottom: 40px;
+                    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+                    backdrop-filter: blur(39.6002px);
+                    padding-top: 60px;
+                    position: relative;
+
+                    .slide-photo{
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -80px;
+                        top: -105px;
+                    }
+
+                   .slide-info-title{
+                        font-family: 'Rajdhani';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 24.3201px;
+                        line-height: 46px;
+                        /* or 189% */
+                        
+                        text-align: center;
+                        padding-left: 3px;
+                        padding-top: 2px;
+                        color: #FFFFFF;
+                        // background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+                        // backdrop-filter: blur(39.6002px); 
+
+                   }
+
+                   .link-swipers{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: -15px 0px 0 22px;
+                        padding-top: 2px;
+
+                        a{
+                            font-family: 'Rajdhani';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 20.1601px;
+                            line-height: 46px;
+                            /* or 229% */
+                            color: #FFB1EE;
+                            margin-right: 5px;
+                            
+                        }
+                    }
+
+                   .sliders-info{
+                        display: flex;
+                        justify-content: space-around;
+                        margin: 7px 10px 0px 10px;
+
+                        .sliders-info-text{
+                            p{
+                                text-align: center;
+                                font-family: 'Rajdhani';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 31px;
+                                line-height: 63px;
+                                color: #FFFFFF;
+                                margin-bottom: -10px;
+                            }
+
+                            span{
+                                font-family: 'Rajdhani';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 19px;
+                                // line-height: 63px;
+                                color: #FFFFFF;
+
+                                opacity: 0.7;
+                                
+                            }
+                        }
+                   }
+                   .sliders-btn{
+                        text-align: center;
+                        margin-top: 44px;
+                        margin-left: 10px;
+
+                        .btn-slc{
+                            cursor: pointer;
+                            border: 0;
+                            padding: 2px;
+                            background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%);
+
+                            span{
+                                display: block;
+                                padding: 12px 90px ;
+
+                                background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+                                font-family: 'Rajdhani';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 19.8983px;
+                                line-height: 25px;
+                                text-align: center;
+                                
+                                color: #FFFFFF;
+                            }
+                        }
+                   }
+                }
+            }
+        }
+    }
+    &-button{
+        cursor: pointer;
+        display: none;
+        border: 0;
+        background: linear-gradient(270deg, #DBCEB0 0%, #f866ec 43.28%, #b17af0 58.09%, #e444ce 64.39%, #EDD995 77.86%, #e252ab 90.47%, #6449fd 98.58%); 
+        padding: 2px; 
+        clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+        white-space: nowrap;
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 40px;
+
+        span{
+            display: block;
+            padding: 20px 100px 20px 40px; 
+            color: white;
+            background: rgba(32, 8, 59, 1);
+            clip-path: polygon(16% 0%, 100% 0, 100% 21%, 100% 72%, 84% 100%, 0 100%, 0% 85%, 0 26%);
+            transition: 0.5s;
+            font-family: 'Orbitron';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 25px;
+
+            color: #FFFFFF;
+
+            position: relative;
+        }span:after{
+            content: '→';
+            position: absolute;
+            font-size: 40px;
+            top: 17px;
+            right: 20px;
+        } 
+    } 
+
+    //----------------
+        .slider-container1 {
+            max-width: 1200px;
+            padding: 0 15px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .slider-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            background-color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+        }
+
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            display: none;
+        }
+
+        .swiper-button-prev {
+            background-image: url("back.svg");
+        }
+
+        .swiper-button-next {
+            background-image: url("right.svg");
+            content: "";
+            width: 50px;
+            height: 50px;
+            background: #FFFFFF;
+        }
+
+        /* swiper-bullets styling */
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            margin: 0 15px;
+            background-color: tomato;
+            opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: navy;
+        }
+//---------------------------------------
+}
+
+@media(max-width:1440px){
+    .people{
+        padding: 0 20px;
+    }
+}
+
+@media(max-width: 1024px){
+    .people{
+        
+        .swiper2{
+            overflow: hidden;
+            margin-top: 47px;
+            width: 950px;
+            
+            
+
+            .swiper-wrapper{
+                // display: flex;
+                // justify-content: space-between;
+                margin-left: 0px;
+                gap: 10px;
+                
+                .swiper-slide{
+                    width: 303px !important;
+                    height: 426px !important;
+                    .slide-obert{
+                        
+                        width: 100%;
+                        text-align: center;
+                        height: 190px !important;
+                   
+                        border: 3px solid rgb(121, 118, 118);
+                        border-bottom: 0;
+                    }
+    
+                    .slide-info{
+                        gap: 20px !important;
+    
+                        .slide-photo{
+                            position: absolute;
+                            left: 50%;
+                            margin-left: -80px;
+                            top: -105px;
+                        }
+    
+                       .slide-info-title{
+                            font-family: 'Rajdhani';
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 31px;
+                            text-align: center;
+
+                            padding-left: 3px;
+                            padding-top: 2px;
+                            color: #FFFFFF;
+                           
+                       }
+    
+                       .link-swipers{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: -15px 0px 0 22px;
+                            padding-top: 2px;
+    
+                            a{
+                                font-family: 'Rajdhani';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 32px;
+
+                                color: #FFB1EE;
+                                margin-right: 5px;
+                                
+                            }
+                        }
+    
+                       .sliders-info{
+                            display: flex;
+                            justify-content: space-around;
+                            margin: 0px 10px 0px 10px;
+    
+                            .sliders-info-text{
+                                p{
+                                    text-align: center;
+                                    font-family: 'Rajdhani';
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 22px;
+                                    line-height: 44px;
+                                    color: #FFFFFF;
+                                    margin-bottom: -20px;
+                                }
+    
+                                span{
+                                    font-family: 'Rajdhani';
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 13px;
+                                    line-height: 43px;
+                                    color: #FFFFFF;
+    
+                                    opacity: 0.7;
+                                    
+                                }
+                            }
+                       }
+                       .sliders-btn{
+                            text-align: center;
+                            // margin-top: 44px;
+                            // margin-left: 10px;
+                            margin: 15px auto -20px;
+                            .btn-slc{
+                                cursor: pointer;
+                                border: 0;
+                                padding: 2px;
+    
+                                span{
+                                    display: block;
+                                    padding: 10px 65px ;
+                                    font-family: 'Rajdhani';
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 13px;
+                                    line-height: 17px;
+                                    text-align: center;
+                                    
+                                    color: #FFFFFF;
+                                }
+                            }
+                       }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media(max-width: 932px){
+
+    .people{
+        margin-top: 112px;
+        
+    }
+}
+
+@media(max-width: 542px){
+    .people{
+        padding-right: 0;
+
+        &__text{
+
+            &-title{
+                margin-left: 17px;
+                
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 23px;
+            }
+
+            &-link{
+                display: none;
+            }
+        }
+        .swiper2{
+            margin-top: 30px;
+        }
+        &__button{
+            margin-top: 5px;
+        }
+    }
+    
+   
+   
+    .people .swiper2 .swiper-wrapper .swiper-slide .slide-obert{
+        
+        height: 200px;
+        padding: 0;
+    }
+
+    .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .slide-photo{
+        width: 112px;
+        margin: 0;
+        margin-left: -56px;
+        top: 0;
+        top: -70px;
+    }
+
+    .people .swiper2 .swiper-wrapper .swiper-slide .slide-info{
+        
+        padding-top: 60px;
+    }
+
+    .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .slide-info-title{
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 32px;
+        margin-top: -15px;
+    }
+
+    .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .link-swipers a{
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 32px;
+    }
+
+    .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .sliders-info .sliders-info-text p{
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 44px;
+        margin-top: 5px;
+    }
+
+    .people .swiper2 .swiper-wrapper .swiper-slide .slide-info .sliders-info .sliders-info-text span{
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 44px;
+    }
+
+}
+
+@media(max-width:375px){
+    .people{
+        
+        &__text{
+
+            &-title{
+                margin-left: 0px;
+            }
+        }
+    }
+}

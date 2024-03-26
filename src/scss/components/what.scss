@@ -1,0 +1,137 @@
+.what{
+    margin-top: 163px;
+    background: url('../img/bgc-what.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 556px;
+    
+}
+.what__content{
+    display: flex;
+    justify-content: flex-end;
+    
+    &-box{
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(72.8013px);
+        border: 2px solid rgb(85, 84, 84);
+        padding: 58px 47px 50px 68px;
+        max-width: 577px;
+        margin-top: 200px;
+        margin-right: 32px;
+        
+        .box-title{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 44px;
+            line-height: 60px;
+            /* or 135% */
+            text-align: center;
+            font-feature-settings: 'salt' on, 'liga' off;
+            width: 370px;
+            color: #FFFFFF;
+            margin-top: 10px;
+        }
+
+        .box-text{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20.0292px;
+            line-height: 36px;
+            /* or 178% */
+
+            font-feature-settings: 'salt' on, 'liga' off;
+
+            color: #FFFFFF;
+            margin-top: 16px;
+        }
+
+        .box-video{
+            margin-top: 42px;
+
+            display: flex;
+            align-items: center;
+
+            .link-box{
+                display: flex;
+                align-items: center;
+                margin-left: 45px;
+                
+            }
+
+            a{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17.8037px;
+                line-height: 27px;
+                /* identical to box height, or 150% */
+
+                font-feature-settings: 'salt' on, 'liga' off;
+
+                color: #FFFFFF;
+
+                img{
+                    padding-right: 8px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+
+    
+    .what{
+        height: 300px;
+        margin-top: 105px;
+        .what__content{
+            justify-content: center;
+
+            &-box{
+                margin-top: 120px;
+                max-width: 335px;
+                padding: 20px 27px 25px 30px;
+                margin: 129px auto;
+                .box-title{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 25px;
+                    line-height: 35px;
+                    margin-left: 0;
+                    font-feature-settings: 'salt' on, 'liga' off;
+                    width: 209px;
+                }
+
+                .box-text{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 11px;
+                    line-height: 21px;
+            
+                    font-feature-settings: 'salt' on, 'liga' off;
+                    width: 260px;
+                    margin-top: 11px;
+                }
+
+                .box-video {
+                    margin:  20px 0 0 0;
+                    a{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 10px;
+                        line-height: 16px;
+
+                        
+                    }
+                }
+
+            }
+        }
+
+    }
+}
